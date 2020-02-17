@@ -29,4 +29,27 @@ main(){
 
   print("Hellow World");
 }
+/*import 'package:http/http.dart' as http;
+import 'dart:convert';
+void main() async {
+  var url = 'http://www.cs.utep.edu/cheon/cs4381/grade/get.php?user=ctiscareno&pin=1417';
+  var response = await http.get(url);
+  print('Response status: ${response.statusCode}');
+  print('Response body: ${response.body}');
+  final jsonString = response.body;
+  jsoncode(jsonString);
+}
 
+
+void jsoncode(final jsonString) {
+  var decode = json.decode(jsonString);
+  print(decode['date']);
+  print(decode['grade']);
+  print(decode['percent']);
+  print(decode['detail']);
+  var dets = decode['detail'];
+  print({dets[0].(decode['name'])} );
+  print('${dets[1].name}' );
+  print('${dets[2].name}' );
+}
+ */
