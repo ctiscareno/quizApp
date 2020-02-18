@@ -1,6 +1,6 @@
 import 'Question.dart';
 import 'dart:convert';
-
+///Type 1 questions : Multiple Choice questions
 class MChoice extends Question{
   int answer;
   var options;
@@ -11,10 +11,11 @@ class MChoice extends Question{
     this.answer = answer;
     this.options = opt;
   }
-
+///display questions of type 1
   @override void dispQ() {
     print('STEM: ' + stem);
     //print('ANSWER: $answer');
+    ///1 for true and 2 for False
     if(options.length == 2){
       print('OPTIONS: $options Select 1 for true and 2 for false');
     }

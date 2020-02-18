@@ -1,10 +1,3 @@
-import 'dart:convert';
-import 'dart:io';
-import 'package:http/http.dart' as http;
-
-import 'FBlank.dart';
-import 'MChoice.dart';
-import 'Question.dart';
 import 'Quiz.dart';
 
 class Quiz_Manager{
@@ -18,7 +11,7 @@ class Quiz_Manager{
   void display(){
     quiz.dispQuiz();
   }
-
+///provides the amount of questions the quiz will have
   void interface(){
     var length = quiz.questions.length;
     print("You have selected to a quiz of size: $length");

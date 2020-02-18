@@ -1,13 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
-
-import 'FBlank.dart';
-import 'MChoice.dart';
-import 'Question.dart';
-import 'Quiz.dart';
 import 'Quiz_Manager.dart';
 
+///parse question from the website using json
 void main() async {
   var url = 'http://www.cs.utep.edu/cheon/cs4381/homework/quiz?quiz=quiz01';
   var response = await http.get(url);
@@ -19,7 +15,7 @@ void main() async {
 
 }
 
-
+///convert json data to strings
 void jsoncode(final jsonString) {
   var data = json.decode(jsonString);
 
