@@ -1,6 +1,5 @@
 import 'Question.dart';
-import 'dart:convert';
-
+///type 1 Multiple Choice questions
 class MChoice extends Question{
   int answer;
 
@@ -9,7 +8,8 @@ class MChoice extends Question{
     this.stem = question;
     this.answer = answer;
   }
-
+  ///provide questions of type 2
+  ///provide answers
   @override void dispQ() {
     print('STEM: ' + stem);
     print('ANSWER: $answer');

@@ -1,9 +1,3 @@
-import 'dart:convert';
-import 'package:http/http.dart' as http;
-
-import 'FBlank.dart';
-import 'MChoice.dart';
-import 'Question.dart';
 import 'Quiz.dart';
 
 class Quiz_Manager{
@@ -13,7 +7,7 @@ class Quiz_Manager{
     var maker = data['quiz'];
     quiz = Quiz(maker);
   }
-
+  ///Display quiz #
   void display(){
     quiz.dispQuiz();
   }

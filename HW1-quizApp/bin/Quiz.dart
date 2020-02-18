@@ -1,9 +1,8 @@
-import 'dart:convert';
-
 import 'FBlank.dart';
 import 'MChoice.dart';
 import 'Question.dart';
 
+///Insert the questions into a list
 class Quiz{
   List<Question> questions = List<Question>(10);
 

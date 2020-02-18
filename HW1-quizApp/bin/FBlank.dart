@@ -1,7 +1,5 @@
 import 'Question.dart';
-import 'dart:convert';
-
-
+///type 2 questions fill in the blank
 class FBlank extends Question{
   List<Object> answer;
 
@@ -9,8 +7,9 @@ class FBlank extends Question{
     this.stem = question;
     this.answer = answer;
   }
-
- @override void dispQ() {
+  ///provide questions of type 2
+  ///provide answers
+  @override void dispQ() {
     print('STEM: ' + stem);
     print('ANSWER: $answer');
   }
