@@ -30,9 +30,14 @@ import 'dart:io';
 
 class Question {
   String stem;
+  //var options;
   //var answer;
 
   void dispQ() {
+    print('STEM: ' + stem);
+  }
+
+  void dispAll() {
     print('STEM: ' + stem);
   }
 

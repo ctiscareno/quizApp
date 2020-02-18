@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:http/http.dart' as http;
 
 import 'FBlank.dart';
@@ -10,11 +11,9 @@ import 'Quiz_Manager.dart';
 void main() async {
   var url = 'http://www.cs.utep.edu/cheon/cs4381/homework/quiz?quiz=quiz01';
   var response = await http.get(url);
-  //print('Response status: ${response.statusCode}');
-  print('Response body: ${response.body}');
+  //print('Response body: ${response.body}');
   final jsonString = response.body;
   jsoncode(jsonString);
-
 
   //int n = int.parse(stdin.readLineSync());
 
@@ -23,27 +22,14 @@ void main() async {
 
 void jsoncode(final jsonString) {
   var data = json.decode(jsonString);
-  /*print("-----------------------------------------------------------------------------");
-  print(data['response']);
-  print(data['quiz']);
-  var quiz = data['quiz'];
-  //print({quiz[0].(data['quiz'])} );
-  //print('${quiz[0].name}' );
-  //print('${quiz['name']}' );
-  print(quiz['name']);
-  print(quiz['question']);
-  print((quiz['question'])[0]);
 
-  var questions = quiz['question'];
-  print(questions[0]);
-  print(questions[1]);
+  print("Obtained 10 questions from Quiz1, how many questions do you want to do? (type '1-10' or anything else for default size of 5)");
+  int n = int.parse(stdin.readLineSync());
+  var trial = new Quiz_Manager(data, n);
 
-  var q0 = questions[0];
-  print(q0['type']);
-  print(q0['stem']); */
-
-  var trial1 = new Quiz_Manager(data);
-  trial1.display();
+  trial.display();
+  print("----------------------------------------------------------");
+  trial.interface();
 
 
 }

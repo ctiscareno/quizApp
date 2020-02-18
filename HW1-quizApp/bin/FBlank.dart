@@ -1,17 +1,25 @@
 import 'Question.dart';
 import 'dart:convert';
+import 'dart:core';
 
 
 class FBlank extends Question{
-  List<Object> answer;
+  String answer;
 
-  FBlank(String question, List<Object> answer){
+  FBlank(String question, var ans){
     this.stem = question;
-    this.answer = answer;
+    //this.answer = ans;
+    var temp= ans[0];
+    this.answer = temp;
   }
 
  @override void dispQ() {
     print('STEM: ' + stem);
+  }
+
+  @override void dispAll() {
+    print('STEM: ' + stem);
+    //print('OPTIONS: $options');
     print('ANSWER: $answer');
   }
 
