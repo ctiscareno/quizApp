@@ -44,14 +44,12 @@ class Quiz{
     }
   }
 
-  /*int getLengthQuiz(){
-    return questions.length;
-  } */
   ///ask user to enter the answer
   double takeQuiz(){
     int n;
     String m;
     int count = 0;
+    List<bool> errors = new List(questions.length);
     for(int i = 0; i < questions.length; i++){
       Question q = questions[i];
       int numQuestion = i+1;
@@ -61,23 +59,48 @@ class Quiz{
         n = int.parse(stdin.readLineSync());
         if(n == q.answer){
           count++;
+          errors[i] = true;
+        }
+        else {
+          errors[i] = false;
         }
       }
       else if(q is FBlank){
         m = stdin.readLineSync();
         if(m.toLowerCase() == q.answer.toLowerCase()) {
           count++;
+          errors[i] = true;
+        }
+        else{
+          errors[i] = false;
         }
       }
       else{
         print("error in subclasses");
       }
     }
-    /// add all the points from the correct questions answered
     double score = (count/questions.length) * 100;
     print("You got a $score % on your quiz");
+
+    reviewQuiz(errors); //bonus points
   }
 
-
-
+  void reviewQuiz(var errors){
+    print("");
+    print("Would you like to review your quiz? (Type y for yes, type n for no (default yes) *Case insensitive*");
+    String n = stdin.readLineSync();
+    if(n.toLowerCase() == 'n'){
+      print("ok bye.");
+    }
+    else{
+      print("You got the following questions wrong:");
+      for(int i = 0; i < errors.length; i++){
+        int numQuestion = i+1;
+        if(errors[i] == false){
+          print("---$numQuestion--------------------------");
+          questions[i].dispQ();
+        }
+      }
+    }
+  }
 }

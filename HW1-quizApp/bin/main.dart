@@ -11,8 +11,6 @@ void main() async {
   final jsonString = response.body;
   jsoncode(jsonString);
 
-  //int n = int.parse(stdin.readLineSync());
-
 }
 
 ///convert json data to strings
@@ -23,7 +21,7 @@ void jsoncode(final jsonString) {
   int n = int.parse(stdin.readLineSync());
   var trial = new Quiz_Manager(data, n);
 
-  trial.display();
+  //trial.display();
   print("----------------------------------------------------------");
   trial.interface();
 
