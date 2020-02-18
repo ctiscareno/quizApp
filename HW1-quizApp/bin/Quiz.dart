@@ -1,6 +1,4 @@
-import 'dart:convert';
 import 'dart:io';
-
 import 'FBlank.dart';
 import 'MChoice.dart';
 import 'Question.dart';
@@ -53,7 +51,7 @@ class Quiz{
     for(int i = 0; i < questions.length; i++){
       Question q = questions[i];
       int numQuestion = i+1;
-      print("---$numQuestion--------------------------");
+      print("--- $numQuestion ---");
       q.dispQ();
       if(q is MChoice){
         n = int.parse(stdin.readLineSync());
@@ -97,7 +95,7 @@ class Quiz{
       for(int i = 0; i < errors.length; i++){
         int numQuestion = i+1;
         if(errors[i] == false){
-          print("---$numQuestion--------------------------");
+          print("--- $numQuestion ---");
           questions[i].dispQ();
         }
       }
