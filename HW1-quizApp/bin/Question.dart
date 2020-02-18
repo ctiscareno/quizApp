@@ -29,9 +29,12 @@ import 'dart:convert';
 import 'dart:io';
 
 class Question {
-  String question;
+  String stem;
+  //var answer;
 
-  Question();
+  void dispQ() {
+    print('STEM: ' + stem);
+  }
 
 }
 

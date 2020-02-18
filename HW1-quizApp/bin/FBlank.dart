@@ -6,8 +6,13 @@ class FBlank extends Question{
   List<Object> answer;
 
   FBlank(String question, List<Object> answer){
-    this.question = question;
+    this.stem = question;
     this.answer = answer;
+  }
+
+ @override void dispQ() {
+    print('STEM: ' + stem);
+    print('ANSWER: $answer');
   }
 
 }

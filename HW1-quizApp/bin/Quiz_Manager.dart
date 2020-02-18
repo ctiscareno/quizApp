@@ -14,5 +14,9 @@ class Quiz_Manager{
     quiz = Quiz(maker);
   }
 
+  void display(){
+    quiz.dispQuiz();
+  }
+
 
 }

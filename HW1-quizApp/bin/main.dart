@@ -16,22 +16,14 @@ void main() async {
   jsoncode(jsonString);
 
 
-  String pregunta = "r u gay";
-  int num = 10;
-  //FBlank q1 = FBlank(pregunta, pregunta);
-  MChoice q2 = MChoice(pregunta, num);
   //int n = int.parse(stdin.readLineSync());
 
-  /*print(q1.question + ' : ' + q1.answer);
-  print(q2.question + ' : ' + q2.answer.toString() );
-
-  print("Hellow World"); */
 }
 
 
 void jsoncode(final jsonString) {
   var data = json.decode(jsonString);
-  print("-----------------------------------------------------------------------------");
+  /*print("-----------------------------------------------------------------------------");
   print(data['response']);
   print(data['quiz']);
   var quiz = data['quiz'];
@@ -48,9 +40,10 @@ void jsoncode(final jsonString) {
 
   var q0 = questions[0];
   print(q0['type']);
-  print(q0['stem']);
+  print(q0['stem']); */
 
   var trial1 = new Quiz_Manager(data);
+  trial1.display();
 
 
 }

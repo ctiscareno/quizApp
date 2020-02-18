@@ -23,5 +23,11 @@ class Quiz{
     questions = temp;
   }
 
+  void dispQuiz() {
+    for(int i = 0; i < questions.length; i++) {
+      questions[i].dispQ();
+    }
+  }
+
 
 }
