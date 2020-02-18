@@ -5,6 +5,7 @@ import 'FBlank.dart';
 import 'MChoice.dart';
 import 'Question.dart';
 import 'Quiz.dart';
+import 'Quiz_Manager.dart';
 
 void main() async {
   var url = 'http://www.cs.utep.edu/cheon/cs4381/homework/quiz?quiz=quiz01';
@@ -17,7 +18,7 @@ void main() async {
 
   String pregunta = "r u gay";
   int num = 10;
-  FBlank q1 = FBlank(pregunta, pregunta);
+  //FBlank q1 = FBlank(pregunta, pregunta);
   MChoice q2 = MChoice(pregunta, num);
   //int n = int.parse(stdin.readLineSync());
 
@@ -48,6 +49,8 @@ void jsoncode(final jsonString) {
   var q0 = questions[0];
   print(q0['type']);
   print(q0['stem']);
+
+  var trial1 = new Quiz_Manager(data);
 
 
 }

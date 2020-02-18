@@ -10,7 +10,8 @@ class Quiz_Manager{
   Quiz quiz;
 
   Quiz_Manager(var data){
-    quiz = Quiz(data);
+    var maker = data['quiz'];
+    quiz = Quiz(maker);
   }
 
 

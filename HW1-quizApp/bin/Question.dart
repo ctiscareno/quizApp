@@ -24,6 +24,10 @@ void main() {
   print(s1.stud_name);
   print(s1.stud_age);
 }*/
+
+import 'dart:convert';
+import 'dart:io';
+
 class Question {
   String question;
 
