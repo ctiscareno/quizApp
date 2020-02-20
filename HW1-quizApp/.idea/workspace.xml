@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b53c05a-5a97-4c2f-a92b-1d2a5e9de75a" name="Default Changelist" comment="" />
+    <list default="true" id="7b53c05a-5a97-4c2f-a92b-1d2a5e9de75a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/FBlank.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FBlank.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/MChoice.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/MChoice.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Question.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Question.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Quiz.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Quiz.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Quiz_Manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Quiz_Manager.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +22,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Xlhq0C2LroUJD7GFagqp9WyE8x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -54,22 +66,22 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="404" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1368.872@0.0.1368.872" timestamp="1581627236585" />
-    <state width="1326" height="227" key="GridCell.Tab.0.bottom" timestamp="1581631974190">
+    <state width="1326" height="245" key="GridCell.Tab.0.bottom" timestamp="1582231317802">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1581631974190" />
-    <state width="1326" height="227" key="GridCell.Tab.0.center" timestamp="1581631974189">
+    <state width="1326" height="245" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1582231317802" />
+    <state width="1326" height="245" key="GridCell.Tab.0.center" timestamp="1582231317801">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1581631974189" />
-    <state width="1326" height="227" key="GridCell.Tab.0.left" timestamp="1581631974189">
+    <state width="1326" height="245" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1582231317801" />
+    <state width="1326" height="245" key="GridCell.Tab.0.left" timestamp="1582231317799">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1581631974189" />
-    <state width="1326" height="227" key="GridCell.Tab.0.right" timestamp="1581631974190">
+    <state width="1326" height="245" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1582231317799" />
+    <state width="1326" height="245" key="GridCell.Tab.0.right" timestamp="1582231317802">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1581631974190" />
+    <state width="1326" height="245" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1582231317802" />
     <state x="380" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1581905292908">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

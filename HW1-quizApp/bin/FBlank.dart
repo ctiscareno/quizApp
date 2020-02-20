@@ -13,7 +13,10 @@ class FBlank extends Question{
   }
 ///provide questions of type 2
  @override void dispQ() {
-    print('STEM: ' + stem);
+    print('QUESTION: ' + stem);
+    print("FILL IN THE BLANK with a string response *CASE INSENSITIVE*");
+    print("SELECT p to go to the PREVIOUS question");
+    print("SELECT n to go to the NEXT question");
   }
 ///provide the answer
   @override void dispAll() {
