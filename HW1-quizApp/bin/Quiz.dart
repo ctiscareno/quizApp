@@ -34,10 +34,26 @@ class Quiz{
     String m;
     int count = 0;
     bool valid = false;
+    bool num = false;
     bool goAhead;
     print('The Quiz is 10 questions, to what question do you want to go to?');
-    print('TYPE an integer from 1 - 10 below');
-    size = int.parse(stdin.readLineSync());
+    print('TYPE an integer between 1 - 10 below');
+    //size = int.parse(stdin.readLineSync());
+    while(num == false){
+      try {
+        size = int.parse(stdin.readLineSync());
+        if((size <= 0) || (size > 10)){
+          print("Integer out of range, try again");
+          num = false;
+        }
+        else{
+          num = true;
+        }
+      } on FormatException {
+        num = false;
+        print("Invalid input, try again");
+      }
+    }
     List<bool> errors = new List.filled(size, false);
 
     for(int i = 0; i < size; i++) {
@@ -117,7 +133,7 @@ class Quiz{
       return true;
     }
     else if((m.toLowerCase() =='n')&&(i < (size - 1))){
-      print("size is $size i is $i");
+      //print("size is $size i is $i");
       return true;
     }
     else if(q is MChoice){
